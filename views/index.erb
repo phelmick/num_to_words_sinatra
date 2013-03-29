@@ -1,0 +1,21 @@
+
+<header>
+  <h1>Num to Words</h1>
+</header>
+
+<div>
+  <form action='/' method='get'>
+    <p>Number:<input type='number' name='num_to_convert'</p>
+    <input type='submit'>
+  </form>
+  <br />
+  <% unless params[:num_to_convert] == nil %>
+    <%= "Result: #{ params[:num_to_convert].to_i.in_words }" %>
+  <% end %>
+</div>
+
+
+
+
+
+
